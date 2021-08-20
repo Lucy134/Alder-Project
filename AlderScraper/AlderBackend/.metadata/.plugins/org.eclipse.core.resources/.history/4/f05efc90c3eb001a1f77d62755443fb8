@@ -1,0 +1,11 @@
+package com.locpol.alder.model;
+
+public class Alderman {
+	private String fName;
+	private String lName;
+	private String ward;
+	private String twitter;
+	private String facebook;
+	
+
+}

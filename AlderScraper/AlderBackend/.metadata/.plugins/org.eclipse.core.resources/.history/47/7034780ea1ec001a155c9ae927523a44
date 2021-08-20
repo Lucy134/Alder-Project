@@ -1,0 +1,34 @@
+package com.locpol.alder.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class AppController {
+	
+	//POST MAPPINGS FOR REGISTER AND LOGIN
+	//USER SESSION AND MAPPING
+	@GetMapping({"/","home"})
+	
+	String index(Model model) {
+		model.addAttribute("msg", "Hello");
+		return "home";
+	}
+	@GetMapping ({"about"})
+		String about(Model model) {
+			model.addAttribute("msg", "What We Do");
+			return "about";
+	}
+	@GetMapping({"register"})
+		String register(Model model) {
+		model.addAttribute("msg", "Register");
+		return "register";
+	}
+	@GetMapping({"login"})
+		String login(Model model) {
+		model.addAttribute("msg", "login");
+		return "login";
+	}
+}

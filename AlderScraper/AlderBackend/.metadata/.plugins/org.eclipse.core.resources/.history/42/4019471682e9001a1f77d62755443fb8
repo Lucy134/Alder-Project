@@ -1,0 +1,8 @@
+spring.mvc.prefix:/WEB-INF/pages
+spring.mvc.suffix: .jsp
+spring.resources.static-locations=/resources/**,/static/**
+server.error.whitelabel.enabled=false
+
+serverport=2400
+server.servlet.context-path=/alder
+servlet.session.timeout=15m
